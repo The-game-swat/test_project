@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Тестовое задание HTML</title>
+	<!--<link rel="stylesheet" href="H:/DeskTop/style.css" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" lang="en-us" content="Medvedkov Sviatoslav">
+</head>
+<body>
+
+<div class="content--center--main">
+	<div class="content--center--inner">
+		<section class="header">
+			<h1>Тестовое задание HTML</h1>
+		</section>
+		<section class="content--main">
+			<div class="center--sitebar">
+				<h2>Основной контент</h2>
+				<p>
+					<strong>Lorem Ipsum</strong> - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+				</p>
+				<p>
+					<strong>Lorem Ipsum</strong> - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+				</p>
+				<p>
+					<strong>Lorem Ipsum</strong> - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+				</p>
+			</div>
+			<div class="right--sitebar">
+				<h3>Правый сайтбар</h3>
+				<p>
+					<strong>Lorem Ipsum</strong> - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+				</p>
+			</div>
+		</section>
+		<section class="footer">
+		<h3>Футер</h3>
+		</section>
+	</div>
+
+</div>
+ 
+
+<style type="text/css">
+body {	
+	min-width: 320px;
+    margin: 0 auto;
+    color: #0a1a2f;
+    font-family: 'Roboto', sans-serif, verdana;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+:root {
+	--1-text-color: #eeeeee;
+	--2-text-color: #cccccc;
+	--3-text-color: #ffffff;
+	--4-text-color: #999999;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+.content--center--main {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: var(--1-text-color);
+}
+.content--center--inner {
+    background-color: var(--3-text-color);
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 500px;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+.header, .footer {
+	width: 100%;
+	height: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+	border-bottom: solid 1px var(--4-text-color);
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: solid var(--4-text-color);
+	background: var(--1-text-color);
+}
+.content--main {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.right--sitebar {
+    width: 300px;
+    border-left: solid 1px var(--2-text-color);
+    flex: none;
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 50%);
+   	transition: all 250ms linear;
+}
+.right--sitebar p,
+.center--sitebar p {
+    padding: 0 15px;
+    text-align: justify;
+}
+
+/* adaptive */
+
+@media(max-width:800px) {
+	.content--center--inner {
+		width: 100%;
+		min-height: auto;
+	}
+}
+
+@media(max-width:700px) {
+	.right--sitebar {
+		opacity: 0;
+		transition: all 250ms linear;
+		width: 0;
+		height: 0
+	}
+
+}
+
+/* END adaptive */
+
+</style>
+
+
+</body>
+</html>
